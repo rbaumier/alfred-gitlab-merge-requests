@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>9AD42A0A-4B2A-48F7-9CF6-4264DEF29FED</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3CDE57A1-6E10-4DBB-8722-866128CED9D1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>rbaumier</string>
+	<key>description</key>
+	<string>show Gitlab Merge Requests</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Gitlab Merge Requests</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gm</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./gitlab-merge-requests "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string>show Merge Requests</string>
+				<key>title</key>
+				<string>Gitlab Merge Requests</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9AD42A0A-4B2A-48F7-9CF6-4264DEF29FED</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>3CDE57A1-6E10-4DBB-8722-866128CED9D1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>⚠️ UPDATE THE VARIABLES BEFORE USING THIS WORKFLOW
+
+- put your group in the variable GITLAB_GROUP
+- create an access token here: https://gitlab.com/profile/personal_access_tokens (`api` scope needed) and update GITLAB_TOKEN</string>
+	<key>uidata</key>
+	<dict>
+		<key>3CDE57A1-6E10-4DBB-8722-866128CED9D1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>405</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+		<key>9AD42A0A-4B2A-48F7-9CF6-4264DEF29FED</key>
+		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>145</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>GITLAB_GROUP</key>
+		<string></string>
+		<key>GITLAB_TOKEN</key>
+		<string></string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>GITLAB_TOKEN</string>
+		<string>GITLAB_GROUP</string>
+	</array>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string>rbaumier.com</string>
+</dict>
+</plist>
